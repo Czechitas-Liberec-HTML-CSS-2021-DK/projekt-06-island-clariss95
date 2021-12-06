@@ -1,307 +1,304 @@
-                                                                        /* nejsme vcerejsi, pouzivame moderni box model */
-                                                                        
-                                                                        *,
-                                                                         ::after,
-                                                                         ::before {
-                                                                            box-sizing: border-box;
-                                                                        }
-                                                                        /*
+                                                                                                                /* nejsme vcerejsi, pouzivame moderni box model */
+                                                                                                                
+                                                                                                                *,
+                                                                                                                 ::after,
+                                                                                                                 ::before {
+                                                                                                                    box-sizing: border-box;
+                                                                                                                }
+                                                                                                                /*
  BARVY
  pozadi           #f5f5f5
  dekorace nadpisů #629edb
 */
-                                                                        
-                                                                        body {
-                                                                            margin: 0;
-                                                                            padding: 0;
-                                                                            background-color: #f5f5f5;
-                                                                            font-family: 'Merriweather', serif;
-                                                                            font-size: 16px;
-                                                                            line-height: 1.6;
-                                                                        }
-                                                                        /*mobil*/
-                                                                        /* HLAVICKA */
-                                                                        
-                                                                        .titulek {
-                                                                            font-family: 'Raleway', serif;
-                                                                            font-size: 70px;
-                                                                            margin: 0;
-                                                                            padding-top: 10px;
-                                                                        }
-                                                                        
-                                                                        .hlavicka {
-                                                                            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../images/island-hlavicka.jpg);
-                                                                            min-height: 400px;
-                                                                            background-repeat: no-repeat;
-                                                                            background-size: cover;
-                                                                            text-align: center;
-                                                                            color: white;
-                                                                            margin-bottom: 40px;
-                                                                        }
-                                                                        
-                                                                        .perex {
-                                                                            padding: 0px 20px 0px 20px;
-                                                                            margin: 0;
-                                                                        }
-                                                                        
-                                                                        .autor {
-                                                                            padding-top: 20px;
-                                                                            font-style: italic;
-                                                                            position: relative;
-                                                                        }
-                                                                        
-                                                                        .autor::before {
-                                                                            content: '';
-                                                                            width: 15%;
-                                                                            border-bottom: solid 2px rgba(255, 255, 255, .5);
-                                                                            position: absolute;
-                                                                            left: 44%;
-                                                                            top: 30%;
-                                                                            /*jak zajistit aby bylo podtržení v každé verzi (mobil desktop tablet) uprostřed stránky? zkoušela jsem přes procenta ale nepodařilo se - napadlo mě nastavit to pro mobil desktop i tablet zvlášť pro určitou min-width, ale pak by se podtržení asi stejně posouvalo při každém zvětšení rozlišení*/
-                                                                            z-index: 1;
-                                                                        }
-                                                                        /* MENU */
-                                                                        
-                                                                        .menu {
-                                                                            list-style-type: none;
-                                                                            padding: 0 30px 0 30px;
-                                                                        }
-                                                                        
-                                                                        .menu a {
-                                                                            color: rgb(189, 187, 187);
-                                                                            text-transform: uppercase;
-                                                                            text-decoration: none;
-                                                                            font-family: 'Raleway', serif;
-                                                                        }
-                                                                        
-                                                                        .menu a:hover {
-                                                                            color: rgba(0, 0, 0, 0.5);
-                                                                        }
-                                                                        
-                                                                        .menu li {
-                                                                            text-align: center;
-                                                                            padding: 5px;
-                                                                            border-bottom: 1px rgb(228, 227, 227) solid;
-                                                                        }
-                                                                        /* OBSAH */
-                                                                        
-                                                                        p {
-                                                                            padding: 20px 20px 0 20px;
-                                                                        }
-                                                                        
-                                                                        h2 {
-                                                                            padding: 0 20px 0 20px;
-                                                                            font-family: 'Raleway', serif;
-                                                                            position: relative;
-                                                                        }
-                                                                        
-                                                                        h2::after {
-                                                                            content: '';
-                                                                            width: 70px;
-                                                                            border-bottom: solid 4px #629edb;
-                                                                            position: absolute;
-                                                                            left: 0;
-                                                                            bottom: -20px;
-                                                                        }
-                                                                        
-                                                                        .uvod {
-                                                                            padding: 35px 0 35px 0;
-                                                                        }
-                                                                        
-                                                                        .islandfoto {
-                                                                            padding: 0px 0px 30px 0px;
-                                                                        }
-                                                                        
-                                                                        .islandfoto img {
-                                                                            width: 100%;
-                                                                        }
-                                                                        
-                                                                        .procisland img {
-                                                                            width: 100%;
-                                                                        }
-                                                                        
-                                                                        .turistika img {
-                                                                            width: 100%;
-                                                                        }
-                                                                        
-                                                                        .popisek1,
-                                                                        .popisek1 a,
-                                                                        .popisek2,
-                                                                        .popisek2 a {
-                                                                            font-size: 10px;
-                                                                            color: rgb(189, 187, 187);
-                                                                            margin: 0;
-                                                                            text-align: center;
-                                                                            font-family: 'Raleway', serif;
-                                                                        }
-                                                                        
-                                                                        .turistika2 {
-                                                                            padding-bottom: 40px;
-                                                                        }
-                                                                        /* FOTOGALERIE */
-                                                                        
-                                                                        figure {
-                                                                            display: flex;
-                                                                            flex-flow: column;
-                                                                            width: 100%;
-                                                                            margin: 0;
-                                                                        }
-                                                                        
-                                                                        img {
-                                                                            width: 100%;
-                                                                        }
-                                                                        
-                                                                        figcaption {
-                                                                            align-self: center;
-                                                                            padding: 10px 0 20px 0;
-                                                                            font-weight: 900;
-                                                                        }
-                                                                        
-                                                                        span {
-                                                                            font-weight: 100;
-                                                                        }
-                                                                        
-                                                                        .galerie {
-                                                                            padding-top: 25px;
-                                                                        }
-                                                                        /* PATICKA */
-                                                                        
-                                                                        footer {
-                                                                            background: linear-gradient(to bottom, rgb(212, 209, 209), transparent 100%);
-                                                                            color: rgb(153, 149, 149);
-                                                                            font-weight: 500;
-                                                                            font-size: 10px;
-                                                                        }
-                                                                        
-                                                                        .zdroje {
-                                                                            padding-top: 40px;
-                                                                            margin: 0;
-                                                                        }
-                                                                        
-                                                                        footer a {
-                                                                            color: rgb(153, 149, 149);
-                                                                        }
-                                                                        /*tablet*/
-                                                                        
-                                                                        @media (min-width: 500px) {
-                                                                            /* MENU */
-                                                                            .menu {
-                                                                                display: flex;
-                                                                                justify-content: space-around;
-                                                                                border-top: 1px rgb(228, 227, 227) solid;
-                                                                                border-bottom: 1px rgb(228, 227, 227) solid;
-                                                                                padding: 0;
-                                                                            }
-                                                                            .menu li {
-                                                                                display: flex;
-                                                                                border-bottom: none;
-                                                                                align-content: center;
-                                                                            }
-                                                                            a {
-                                                                                font-size: 12px;
-                                                                            }
-                                                                            .ohraniceni {
-                                                                                border-right: 1px rgb(228, 227, 227) solid;
-                                                                                padding-right: 20px;
-                                                                            }
-                                                                            /*mám problém zarovnat pravy border, tak aby kategorie menu byly uprostřed*/
-                                                                            /* OBSAH */
-                                                                            .islandfoto {
-                                                                                position: relative;
-                                                                            }
-                                                                            .popisek1 {
-                                                                                position: absolute;
-                                                                                right: 0;
-                                                                                bottom: 40px;
-                                                                                color: rgb(221, 218, 218)
-                                                                            }
-                                                                            .popisek1 a {
-                                                                                color: rgb(221, 218, 218);
-                                                                            }
-                                                                            /* FOTOGALERIE */
-                                                                            .galerie {
-                                                                                display: flex;
-                                                                                flex-wrap: wrap;
-                                                                            }
-                                                                            .foto {
-                                                                                display: flex;
-                                                                                width: 50%;
-                                                                                position: relative;
-                                                                            }
-                                                                            /*animace zatím nefunguje*/
-                                                                            .popisek2 {
-                                                                                position: absolute;
-                                                                                display: block;
-                                                                                bottom: -20px;
-                                                                                background: #66000000;
-                                                                                background-size: 100% 100%;
-                                                                                color: white;
-                                                                                font-weight: 100;
-                                                                                z-index: 5;
-                                                                            }
-                                                                            .popisek2 a {
-                                                                                color: white;
-                                                                            }
-                                                                        }
-                                                                        /*desktop*/
-                                                                        
-                                                                        @media (min-width: 1000px) {
-                                                                            body {
-                                                                                padding: 0;
-                                                                                margin: 0;
-                                                                                background: url(../../images/island-hlavicka.jpg);
-                                                                                background-size: cover;
-                                                                                background-repeat: no-repeat;
-                                                                                max-height: 500px;
-                                                                            }
-                                                                            .obal {
-                                                                                width: 800px;
-                                                                                margin: 0 auto;
-                                                                                background: white;
-                                                                                box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-                                                                                margin-top: 500px;
-                                                                            }
-                                                                            /*nevím si rady s tím jak udělat hlavičku podle předlohy. na pozadí za .obal je místo body html.. vlastně vůbec nevím jak to elegantně vyřešit.
+                                                                                                                
+                                                                                                                body {
+                                                                                                                    margin: 0;
+                                                                                                                    padding: 0;
+                                                                                                                    background-color: #f5f5f5;
+                                                                                                                    font-family: 'Merriweather', serif;
+                                                                                                                    font-size: 16px;
+                                                                                                                    line-height: 1.6;
+                                                                                                                }
+                                                                                                                /*mobil*/
+                                                                                                                /* HLAVICKA */
+                                                                                                                
+                                                                                                                .titulek {
+                                                                                                                    font-family: 'Raleway', serif;
+                                                                                                                    font-size: 70px;
+                                                                                                                    margin: 0;
+                                                                                                                    padding-top: 10px;
+                                                                                                                }
+                                                                                                                
+                                                                                                                .hlavicka {
+                                                                                                                    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../images/island-hlavicka.jpg);
+                                                                                                                    min-height: 400px;
+                                                                                                                    background-repeat: no-repeat;
+                                                                                                                    background-size: cover;
+                                                                                                                    text-align: center;
+                                                                                                                    color: white;
+                                                                                                                    margin-bottom: 40px;
+                                                                                                                }
+                                                                                                                
+                                                                                                                .perex {
+                                                                                                                    padding: 0px 20px 0px 20px;
+                                                                                                                    margin: 0;
+                                                                                                                }
+                                                                                                                
+                                                                                                                .autor {
+                                                                                                                    padding-top: 20px;
+                                                                                                                    font-style: italic;
+                                                                                                                    position: relative;
+                                                                                                                }
+                                                                                                                
+                                                                                                                .autor::before {
+                                                                                                                    content: '';
+                                                                                                                    width: 15%;
+                                                                                                                    border-bottom: solid 2px rgba(255, 255, 255, .5);
+                                                                                                                    position: absolute;
+                                                                                                                    left: 44%;
+                                                                                                                    top: 30%;
+                                                                                                                    /*jak zajistit aby bylo podtržení v každé verzi (mobil desktop tablet) uprostřed stránky? zkoušela jsem přes procenta ale nepodařilo se - napadlo mě nastavit to pro mobil desktop i tablet zvlášť pro určitou min-width, ale pak by se podtržení asi stejně posouvalo při každém zvětšení rozlišení*/
+                                                                                                                    z-index: 1;
+                                                                                                                }
+                                                                                                                /* MENU */
+                                                                                                                
+                                                                                                                .menu {
+                                                                                                                    list-style-type: none;
+                                                                                                                    padding: 0 30px 0 30px;
+                                                                                                                }
+                                                                                                                
+                                                                                                                .menu a {
+                                                                                                                    color: rgb(189, 187, 187);
+                                                                                                                    text-transform: uppercase;
+                                                                                                                    text-decoration: none;
+                                                                                                                    font-family: 'Raleway', serif;
+                                                                                                                }
+                                                                                                                
+                                                                                                                .menu a:hover {
+                                                                                                                    color: rgba(0, 0, 0, 0.5);
+                                                                                                                }
+                                                                                                                
+                                                                                                                .menu li {
+                                                                                                                    text-align: center;
+                                                                                                                    padding: 5px;
+                                                                                                                    border-bottom: 1px rgb(228, 227, 227) solid;
+                                                                                                                }
+                                                                                                                /* OBSAH */
+                                                                                                                
+                                                                                                                p {
+                                                                                                                    padding: 20px 20px 0 20px;
+                                                                                                                }
+                                                                                                                
+                                                                                                                h2 {
+                                                                                                                    padding: 0 20px 0 20px;
+                                                                                                                    font-family: 'Raleway', serif;
+                                                                                                                    position: relative;
+                                                                                                                }
+                                                                                                                
+                                                                                                                h2::after {
+                                                                                                                    content: '';
+                                                                                                                    width: 70px;
+                                                                                                                    border-bottom: solid 4px #629edb;
+                                                                                                                    position: absolute;
+                                                                                                                    left: 0;
+                                                                                                                    bottom: -20px;
+                                                                                                                }
+                                                                                                                
+                                                                                                                .uvod {
+                                                                                                                    padding: 35px 0 35px 0;
+                                                                                                                }
+                                                                                                                
+                                                                                                                .islandfoto {
+                                                                                                                    padding: 0px 0px 30px 0px;
+                                                                                                                }
+                                                                                                                
+                                                                                                                .islandfoto img {
+                                                                                                                    width: 100%;
+                                                                                                                }
+                                                                                                                
+                                                                                                                .procisland img {
+                                                                                                                    width: 100%;
+                                                                                                                }
+                                                                                                                
+                                                                                                                .turistika img {
+                                                                                                                    width: 100%;
+                                                                                                                }
+                                                                                                                
+                                                                                                                .popisek1,
+                                                                                                                .popisek1 a,
+                                                                                                                .popisek2,
+                                                                                                                .popisek2 a {
+                                                                                                                    font-size: 10px;
+                                                                                                                    color: rgb(189, 187, 187);
+                                                                                                                    margin: 0;
+                                                                                                                    text-align: center;
+                                                                                                                    font-family: 'Raleway', serif;
+                                                                                                                }
+                                                                                                                
+                                                                                                                .turistika2 {
+                                                                                                                    padding-bottom: 40px;
+                                                                                                                }
+                                                                                                                /* FOTOGALERIE */
+                                                                                                                
+                                                                                                                figure {
+                                                                                                                    display: flex;
+                                                                                                                    flex-flow: column;
+                                                                                                                    width: 100%;
+                                                                                                                    margin: 0;
+                                                                                                                }
+                                                                                                                
+                                                                                                                img {
+                                                                                                                    width: 100%;
+                                                                                                                }
+                                                                                                                
+                                                                                                                figcaption {
+                                                                                                                    align-self: center;
+                                                                                                                    padding: 10px 0 20px 0;
+                                                                                                                    font-weight: 900;
+                                                                                                                }
+                                                                                                                
+                                                                                                                span {
+                                                                                                                    font-weight: 100;
+                                                                                                                }
+                                                                                                                
+                                                                                                                .galerie {
+                                                                                                                    padding-top: 25px;
+                                                                                                                }
+                                                                                                                /* PATICKA */
+                                                                                                                
+                                                                                                                footer {
+                                                                                                                    background: linear-gradient(to bottom, rgb(212, 209, 209), transparent 100%);
+                                                                                                                    color: rgb(153, 149, 149);
+                                                                                                                    font-weight: 500;
+                                                                                                                    font-size: 10px;
+                                                                                                                }
+                                                                                                                
+                                                                                                                .zdroje {
+                                                                                                                    padding-top: 40px;
+                                                                                                                    margin: 0;
+                                                                                                                }
+                                                                                                                
+                                                                                                                footer a {
+                                                                                                                    color: rgb(153, 149, 149);
+                                                                                                                }
+                                                                                                                /*tablet*/
+                                                                                                                
+                                                                                                                @media (min-width: 500px) {
+                                                                                                                    /* MENU */
+                                                                                                                    .menu {
+                                                                                                                        display: flex;
+                                                                                                                        justify-content: space-around;
+                                                                                                                        border-top: 1px rgb(228, 227, 227) solid;
+                                                                                                                        border-bottom: 1px rgb(228, 227, 227) solid;
+                                                                                                                        padding: 0;
+                                                                                                                    }
+                                                                                                                    .menu li {
+                                                                                                                        display: flex;
+                                                                                                                        border-bottom: none;
+                                                                                                                        align-content: center;
+                                                                                                                    }
+                                                                                                                    a {
+                                                                                                                        font-size: 12px;
+                                                                                                                    }
+                                                                                                                    .ohraniceni {
+                                                                                                                        border-right: 1px rgb(228, 227, 227) solid;
+                                                                                                                        padding-right: 20px;
+                                                                                                                    }
+                                                                                                                    /*mám problém zarovnat pravy border, tak aby kategorie menu byly uprostřed*/
+                                                                                                                    /* OBSAH */
+                                                                                                                    .islandfoto {
+                                                                                                                        position: relative;
+                                                                                                                    }
+                                                                                                                    .popisek1 {
+                                                                                                                        position: absolute;
+                                                                                                                        right: 0;
+                                                                                                                        bottom: 40px;
+                                                                                                                        color: rgb(221, 218, 218)
+                                                                                                                    }
+                                                                                                                    .popisek1 a {
+                                                                                                                        color: rgb(221, 218, 218);
+                                                                                                                    }
+                                                                                                                    /* FOTOGALERIE */
+                                                                                                                    .galerie {
+                                                                                                                        display: flex;
+                                                                                                                        flex-wrap: wrap;
+                                                                                                                    }
+                                                                                                                    .foto {
+                                                                                                                        display: flex;
+                                                                                                                        width: 50%;
+                                                                                                                        position: relative;
+                                                                                                                    }
+                                                                                                                    /*animace zatím nefunguje*/
+                                                                                                                    .popisek2 {
+                                                                                                                        position: absolute;
+                                                                                                                        display: block;
+                                                                                                                        bottom: -20px;
+                                                                                                                        background: #66000000;
+                                                                                                                        background-size: 100% 100%;
+                                                                                                                        color: white;
+                                                                                                                        font-weight: 100;
+                                                                                                                        z-index: 5;
+                                                                                                                    }
+                                                                                                                    .popisek2 a {
+                                                                                                                        color: white;
+                                                                                                                    }
+                                                                                                                }
+                                                                                                                /*desktop*/
+                                                                                                                
+                                                                                                                @media (min-width: 1000px) {
+                                                                                                                    body {
+                                                                                                                        padding: 0;
+                                                                                                                        margin: 0;
+                                                                                                                        background: url(../../images/island-hlavicka.jpg);
+                                                                                                                        background-size: cover;
+                                                                                                                        background-repeat: no-repeat;
+                                                                                                                        max-height: 500px;
+                                                                                                                    }
+                                                                                                                    .obal {
+                                                                                                                        width: 800px;
+                                                                                                                        margin: 0 auto;
+                                                                                                                        background: white;
+                                                                                                                        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+                                                                                                                    }
+                                                                                                                    /*nevím si rady s tím jak udělat hlavičku podle předlohy. na pozadí za .obal je hlavicka ale taky html html.. vlastně vůbec nevím jak to elegantně vyřešit.
 
                                                                         /* HLAVICKA */
-                                                                            .hlavicka {
-                                                                                display: none;
-                                                                            }
-                                                                        }
-                                                                        /* MENU */
-                                                                        
-                                                                        .desktopmenu {
-                                                                            display: flex;
-                                                                        }
-                                                                        
-                                                                        .menu {
-                                                                            display: flex;
-                                                                            justify-content: left;
-                                                                            flex-direction: column;
-                                                                            flex-basis: 50%;
-                                                                            border: none;
-                                                                            padding: 10px 10px 10px 10px;
-                                                                        }
-                                                                        
-                                                                        .menu li {
-                                                                            border-right: none;
-                                                                            padding-right: 50px;
-                                                                        }
-                                                                        
-                                                                        .uvod {
-                                                                            padding: none;
-                                                                            margin: none;
-                                                                            /*nevím proč nemůžu přepsat padding z mobilní verze? padding: 35px 0 35px 0; */
-                                                                        }
-                                                                        /* OBSAH */
-                                                                        
-                                                                        .turistika p,
-                                                                        .turistika2 p {
-                                                                            padding-left: 175px;
-                                                                        }
-                                                                        /* FOTOGALERIE */
-                                                                        
-                                                                        .foto {
-                                                                            width: 33.33%;
-                                                                        }
-                                                                        /* PATICKA */
+                                                                                                                    .hlavicka {
+                                                                                                                        margin: 0;
+                                                                                                                    }
+                                                                                                                    /* MENU */
+                                                                                                                    .desktopmenu {
+                                                                                                                        display: flex;
+                                                                                                                    }
+                                                                                                                    .menu {
+                                                                                                                        display: flex;
+                                                                                                                        justify-content: left;
+                                                                                                                        flex-direction: column;
+                                                                                                                        flex-basis: 50%;
+                                                                                                                        border: none;
+                                                                                                                        padding: 10px 10px 10px 10px;
+                                                                                                                    }
+                                                                                                                    .menu li {
+                                                                                                                        border-right: none;
+                                                                                                                        padding-right: 50px;
+                                                                                                                    }
+                                                                                                                    .uvod {
+                                                                                                                        padding: none;
+                                                                                                                        margin: none;
+                                                                                                                        /*nevím proč nemůžu přepsat padding z mobilní verze? padding: 35px 0 35px 0; */
+                                                                                                                    }
+                                                                                                                    /* OBSAH */
+                                                                                                                    .turistika p,
+                                                                                                                    .turistika2 p {
+                                                                                                                        padding-left: 175px;
+                                                                                                                    }
+                                                                                                                    /* FOTOGALERIE */
+                                                                                                                    .foto {
+                                                                                                                        width: 33.33%;
+                                                                                                                    }
+                                                                                                                    /* PATICKA */
+                                                                                                                    footer p {
+                                                                                                                        background-color: white;
+                                                                                                                        margin: 0;
+                                                                                                                    }
+                                                                                                                }
