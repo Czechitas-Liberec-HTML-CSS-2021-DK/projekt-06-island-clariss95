@@ -263,12 +263,12 @@
                                                                             }
                                                                             /*nevím si rady s tím jak udělat hlavičku podle předlohy. na pozadí za .obal je místo body html.. vlastně vůbec nevím jak to elegantně vyřešit.
 
-                                                                                    /* HLAVICKA */
+                                                                        /* HLAVICKA */
                                                                             .hlavicka {
                                                                                 display: none;
                                                                             }
                                                                         }
-                                                                        /* OBSAH */
+                                                                        /* MENU */
                                                                         
                                                                         .desktopmenu {
                                                                             display: flex;
@@ -288,9 +288,20 @@
                                                                             padding-right: 50px;
                                                                         }
                                                                         
-                                                                        .uvod p {
+                                                                        .uvod {
                                                                             padding: none;
                                                                             margin: none;
+                                                                            /*nevím proč nemůžu přepsat padding z mobilní verze? padding: 35px 0 35px 0; */
+                                                                        }
+                                                                        /* OBSAH */
+                                                                        
+                                                                        .turistika p,
+                                                                        .turistika2 p {
+                                                                            padding-left: 175px;
                                                                         }
                                                                         /* FOTOGALERIE */
+                                                                        
+                                                                        .foto {
+                                                                            width: 33.33%;
+                                                                        }
                                                                         /* PATICKA */
